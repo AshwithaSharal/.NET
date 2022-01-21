@@ -29,6 +29,7 @@ namespace exercises<br>
     }<br>
 }<br>
 Output:<br>
-![Screenshot 2022-01-21 062714](https://user-images.githubusercontent.com/98145023/150480411-031f509b-a90b-4ba8-a56c-873edaf8947a.png)
+![image](https://user-images.githubusercontent.com/98145023/150480612-1fa6983f-cf2c-4369-82a0-381897fdf1e5.png)
+
 
 
