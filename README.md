@@ -187,26 +187,26 @@ OUTPUT:<br><br>
 
 4)<br><br>
 
-using System;
-namespace Exercises
-{
-    class GrayCode
-    {
-        static int getGray(int n)
-        {
-            return n ^ (n >> 1);
-        }
-        static void Main(string[] args)
-        {
-            int InputNum, GrayNum;
-            Console.Write("\n Enter the decimal number: ");
-            InputNum = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("\n Binary equivalent of {0}:{1}", InputNum, Convert.ToString(InputNum, 2));
-            GrayNum = getGray(InputNum);
-            Console.WriteLine("\n Gray Code equivalent of {0}:{1}", InputNum, Convert.ToString(GrayNum,2));
-        }
-}
-    }
+using System;<br>
+namespace Exercises<br>
+{<br>
+    class GrayCodev<br>
+    {<br>
+        static int getGray(int n)<br>
+        {<br>
+            return n ^ (n >> 1);<br>
+        }<br>
+        static void Main(string[] args)<br>
+        {<br>
+            int InputNum, GrayNum;<br>
+            Console.Write("\n Enter the decimal number: ");<br>
+            InputNum = Convert.ToInt32(Console.ReadLine());<br>
+            Console.WriteLine("\n Binary equivalent of {0}:{1}", InputNum, Convert.ToString(InputNum, 2));<br>
+            GrayNum = getGray(InputNum);<br>
+            Console.WriteLine("\n Gray Code equivalent of {0}:{1}", InputNum, Convert.ToString(GrayNum,2));<br>
+        }<br>
+}<br>
+    }<br>
 
 OUTPUT:<br><br>
 ![image](https://user-images.githubusercontent.com/98145023/152293680-54395c6a-3453-417e-b73e-e1d3e37958ea.png)
