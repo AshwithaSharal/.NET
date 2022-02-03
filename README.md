@@ -171,17 +171,14 @@ namespace Exercises<br>
             Console.WriteLine("Grade    :" + grade);<br>
         }<br>
     }<br>
-
-
-    class Multilevel<br>
+class Multilevel<br>
     {<br>
         public static void Main(string []args)<br>
         {<br>
             MarksDetails Student1 = new MarksDetails("Abhijith", 22, "Male", 20190001, "MCA", 5, new int[] { 77, 80, 98, 95, 90 });<br>
             Student1.Display();<br>
         }<br>
-
-    }<br>
+}<br>
 }<br><br><br>
 OUTPUT:<br><br><br><br>
 ![image](https://user-images.githubusercontent.com/98145023/152290300-1ea12047-3257-4d7b-abf6-d63e1a585340.png)<br><br><br>
