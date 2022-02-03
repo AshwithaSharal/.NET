@@ -180,7 +180,7 @@ class Multilevel<br>
         }<br>
 }<br>
 }<br><br><br>
-OUTPUT:<br><br><br><br>
+OUTPUT:<br><br>
 ![image](https://user-images.githubusercontent.com/98145023/152290300-1ea12047-3257-4d7b-abf6-d63e1a585340.png)<br><br><br>
 
 
