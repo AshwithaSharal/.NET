@@ -102,8 +102,7 @@ namespace Exercises<br>
             Console.WriteLine("Age      :" + age);<br>
             Console.WriteLine("Gender      :" + gender);<br>
         }<br>
-        
-    }<br>
+        }<br>
     class CourseDetails : PersonalDetails<br>
     {<br>
         int regNo;<br>
