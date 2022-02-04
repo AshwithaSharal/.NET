@@ -430,4 +430,56 @@ OUTPUT:<br>
 
 
 
+10)<br>
+using System;<br>
+namespace Exercises<br>
+{<br>
+    class SumOfDiagonals<br>
+        {<br>
+    static void Main(string[] args)<br>
+    {<br>
+        int MaxRow, MaxCol, Sum = 0;<br>
+        int[,] Matrix;<br>
+        Console.WriteLine("\n-----SUM OF DIAGONAL OF A MATRIX-----\n");<br>
+        Console.Write("\n Enter the number of rows:");<br>
+        MaxRow = Convert.ToInt32(Console.ReadLine());<br>
+        Console.Write("\n Enter the number of COLUMNS:");<br>
+        MaxCol = Convert.ToInt32(Console.ReadLine());<br>
+        if (MaxRow != MaxCol)<br>
+        {<br>
+            Console.WriteLine("\n The Dimensions entered are not of Suare Matrix.");<br>
+            Console.WriteLine("\n Existing the program..");<br>
+            return;<br>
+        }<br>
+        Matrix = new int[MaxRow, MaxCol];<br>
+        for (int i = 0; i < MaxRow; i++)<br>
+        {<br>
+            for (int j = 0; j < MaxCol; j++)<br>
+            {<br>
+                Console.Write("\n Enter the ({0},{1})th element of the matrix :", (i + 1), (j + 1));<br>
+                Matrix[i, j] = Convert.ToInt32(Console.ReadLine());<br>
+            }<br>
+        }<br>
+    Console.WriteLine("\n The entered matrix is :");<br>
+for (int i = 0; i<MaxRow;i++)<br>
+        {<br>
+            for(int j=0;j<MaxCol;j++)<br>
+            {<br>
+        Console.Write("   "+Matrix[i, j]);<br>
+                if(i==j)<br>
+                {<br>
+                    Sum += Matrix[i, j];<br>
+                }<br>
+        }<br>
+                Console.WriteLine();<br>
+}<br>
+Console.WriteLine("\n The Sum of Diagonal is "+Sum);<br>
+}<br>
+}<br>
+}<br><br>
+OUTPUT:<br>
+![image](https://user-images.githubusercontent.com/98145023/152485524-dea27302-a89b-4bbe-a796-c3aa8349364d.png)<br>
+![image](https://user-images.githubusercontent.com/98145023/152485604-a08eff02-3371-4595-aa98-f6c5cf17deba.png)<br><br><br><br>
 
+
+    
