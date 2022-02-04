@@ -264,10 +264,10 @@ namespace Exercises<br>
     }<br>
     }<br><br><br>
     OUTPUT:<br>
-    ![image](https://user-images.githubusercontent.com/98145023/152297844-fb63b288-5094-4980-ad4b-327c662e0cde.png)
+    ![image](https://user-images.githubusercontent.com/98145023/152297844-fb63b288-5094-4980-ad4b-327c662e0cde.png)<br><br><br><br>
 
 
-6)<br><br>
+6)<br>
 using System;<br>
 namespace Exercices<br>
 {<br>
