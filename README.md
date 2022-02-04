@@ -305,4 +305,44 @@ namespace Exercices<br>
     }<br>
 }<br><br>
 OUTPUT:<br>
-![Screenshot 2022-02-03 131657](https://user-images.githubusercontent.com/98145023/152474995-f1ec22f3-ce14-41dc-afb7-19acde6c0855.png)<br><br>
+![Screenshot 2022-02-03 131657](https://user-images.githubusercontent.com/98145023/152474995-f1ec22f3-ce14-41dc-afb7-19acde6c0855.png)<br><br><br><br>
+
+
+
+
+
+7)<br>
+using System;<br>
+namespace Exercises<br>
+{<br>
+    class RegisterNum<br>
+    {<br>
+        int regNo;<br>
+        static int startNum;<br>
+        static RegisterNum()<br>
+        {<br>
+            startNum = 20210000;<br>
+        }<br>
+        RegisterNum()<br>
+        {<br>
+            regNo = ++startNum;<br>
+        }<br>
+        public static void Main(string[] args)<br>
+        {<br>
+            for (int i = 0; i < 100; i++)<br>
+            {<br>
+                RegisterNum Student = new RegisterNum();<br>
+                Console.WriteLine("Student{0}:{1}", i + 1, Student.regNo);<br>
+            }<br>
+        }<br>
+    }<br>
+}<br>
+OUTPUT:<br>
+![image](https://user-images.githubusercontent.com/98145023/152477165-99f0193f-7fb2-4ceb-bc61-10eada5df8f7.png)<br>
+![image](https://user-images.githubusercontent.com/98145023/152477240-75238add-7d11-46ca-a62c-4d4c6dd9e8c8.png)<br>
+![image](https://user-images.githubusercontent.com/98145023/152477389-2cfb4c68-3a0d-4ee9-958d-2a1dc959b11c.png)<br>
+![image](https://user-images.githubusercontent.com/98145023/152477477-0666d55b-f4c4-4b7c-8dc4-4a3e3ef2fc8a.png)<br><br><br><br>
+
+
+
+
