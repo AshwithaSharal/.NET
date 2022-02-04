@@ -345,4 +345,35 @@ OUTPUT:<br>
 
 
 
+8)<br>
+using System;<br>
+namespace Exercises<br>
+{<br>
+    class FrequencyIS<br>
+    {<br>
+        static void Main(string[]args)<br>
+        {<br>
+            int count = 1;<br>
+            string inputString;<br>
+            Console.WriteLine("\n----Frequency of word 'is'----");<br>
+            Console.Write("\n Enter the input string:");<br>
+            inputString = Console.ReadLine();<br>
+            char[] seperator = { ',', ' ', '.', '!', '\n' };<br>
+            string testString = inputString.ToLower();<br>
+            String[] outcomes = testString.Split(seperator);<br>
+            foreach (String s in outcomes)<br>
+            {<br>
+                Console.WriteLine(s);<br>
+                if (s == "is")<br>
+                    count++;<br>
+            }<br>
+            Console.WriteLine("\n Number of 'is' in '"+inputString+"' is: "+count);<br>
+                }<br>
+                }<br>
+                }<br><br>
+                OUTPUT:<br>
+                ![image](https://user-images.githubusercontent.com/98145023/152480170-5955da77-d49b-4e48-bb97-ee037ed0bc2b.png)<br><br><br><br>
+
+        
+    
 
