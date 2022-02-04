@@ -267,42 +267,42 @@ namespace Exercises<br>
     ![image](https://user-images.githubusercontent.com/98145023/152297844-fb63b288-5094-4980-ad4b-327c662e0cde.png)
 
 
-using System;
-namespace Exercices
-{
-    class Delegates
-    {
-        delegate string UppercaseDelegate(string input);
-        static string UppercaseFirst(string input)
-        {
-            char[] buffer = input.ToCharArray();
-            buffer[0] = char.ToUpper(buffer[0]);
-            return new string(buffer);
-        }
-        static string UppercaseLast(string input)
-        {
-            char[] buffer = input.ToCharArray();
-            buffer[buffer.Length - 1] = char.ToUpper(buffer[buffer.Length - 1]);
-            return new string(buffer);
-        }
-        static String UppercaseAll(string input)
-        {
-            return input.ToUpper();
-        }
-        static void WriteOutput(string input, UppercaseDelegate del)
-        {
-            Console.WriteLine("Input String:{0}", input);
-            Console.WriteLine("Output String:{0}", del(input));
-        }
-                static void Main()
-            {
-                WriteOutput("tom", new UppercaseDelegate(UppercaseFirst));
-                WriteOutput("tom", new UppercaseDelegate(UppercaseLast));
-                WriteOutput("tom", new UppercaseDelegate(UppercaseAll));
-                Console.ReadLine();
-
-            
-        }
-    }
-}
-
+6)<br><br>
+using System;<br>
+namespace Exercices<br>
+{<br>
+    class Delegates<br>
+    {<br>
+        delegate string UppercaseDelegate(string input);<br>
+        static string UppercaseFirst(string input)<br>
+        {<br>
+            char[] buffer = input.ToCharArray();<br>
+            buffer[0] = char.ToUpper(buffer[0]);<br>
+            return new string(buffer);<br>
+        }<br>
+        static string UppercaseLast(string input)<br>
+        {<br>
+            char[] buffer = input.ToCharArray();<br>
+            buffer[buffer.Length - 1] = char.ToUpper(buffer[buffer.Length - 1]);<br>
+            return new string(buffer);<br>
+        }<br>
+        static String UppercaseAll(string input)<br>
+        {<br>
+            return input.ToUpper();<br>
+        }<br>
+        static void WriteOutput(string input, UppercaseDelegate del)<br>
+        {<br>
+            Console.WriteLine("Input String:{0}", input);<br>
+            Console.WriteLine("Output String:{0}", del(input));<br>
+        }<br>
+                static void Main()<br>
+            {<br>
+                WriteOutput("tom", new UppercaseDelegate(UppercaseFirst));<br>
+                WriteOutput("tom", new UppercaseDelegate(UppercaseLast));<br>
+                WriteOutput("tom", new UppercaseDelegate(UppercaseAll));<br>
+                Console.ReadLine();<br>
+                }<br>
+    }<br>
+}<br><br>
+OUTPUT:<br>
+![Screenshot 2022-02-03 131657](https://user-images.githubusercontent.com/98145023/152474995-f1ec22f3-ce14-41dc-afb7-19acde6c0855.png)<br><br>
