@@ -605,7 +605,7 @@ namespace Exercises<br>
 }<br>
 }<br>
 }<br>
-OUTPUT:<br>
+OUTPUT:<br><br>
 ![image](https://user-images.githubusercontent.com/98145023/154413241-e1be7210-7b81-42f5-803f-260f9b2ebd08.png)<br>
 ![image](https://user-images.githubusercontent.com/98145023/154413556-74928336-4601-4601-887b-fd2a528a72e7.png)<br><br><br>
 
