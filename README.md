@@ -610,3 +610,62 @@ OUTPUT:<br>
 ![image](https://user-images.githubusercontent.com/98145023/154413556-74928336-4601-4601-887b-fd2a528a72e7.png)<br><br><br>
 
 
+13)<br>
+using System;<br>
+namespace Exercises<br>
+{<br>
+    class Fraction:IComparable<br>
+    {<br>
+        int z,n;<br>
+            public Fraction(int z,int n)<br>
+        {<br>
+            this.z = z;<br>
+            this.n = n;<br>
+        }<br>
+        public static Fraction operator+(Fraction a,Fraction b)<br>
+        {<br>
+            return new Fraction(a.z * b.n + a.n * b.z, a.n * b.n);<br>
+        }<br>
+        public int CompareTo(Object obj)<br>
+        {<br>
+            Fraction f = (Fraction)obj;<br>
+            if ((float)z / n < (float)f.z / f.n)<br>
+                return -1;<br>
+            else if ((float)z / n > (float)f.z / f.n)<br>
+                return 1;<br>
+            else<br>
+                return 0;<br>
+        }<br>
+        public override string ToString()<br>
+        {<br>
+            return z + "/" + n;<br>
+            }<br>
+        }<br>
+   class ICompInterface<br>
+{<br>
+    public static void Main()<br>
+    {<br>
+        Fraction[] a = <br>
+            {<br>
+            new Fraction (5,2),<br>
+            new Fraction (29,6),<br>
+            new Fraction (4,5),<br>
+            new Fraction (10,8),<br>
+            new Fraction (34,7)<br>
+            };<br>
+        Array.Sort(a);<br>
+        Console.WriteLine("Implementing the IComaparable Interface in " + " Displaying Fractions:");<br>
+        foreach( Fraction f in a)<br>
+        {<br>
+            Console.WriteLine(f + " ");<br>
+        }<br>
+        Console.WriteLine();<br>
+        Console.ReadLine();<br>
+    }<br>
+}<br>
+}<br>
+
+OUTPUT:<br>
+![image](https://user-images.githubusercontent.com/98145023/154418045-302bafb1-62ab-48e0-b6c4-fc79b3b158b2.png)<br><br>
+<br>
+
