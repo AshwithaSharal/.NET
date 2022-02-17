@@ -1,5 +1,6 @@
-# .NET
-**1)**
+# .NET<br><br>
+
+1)C# program to print a Binary Triangle<br>
 <br>
 using System;<br>
 namespace exercises<br>
@@ -37,7 +38,7 @@ Output:
 
 
 
-2)
+2)C# program to check whether the entered number is an amicable number or not<br><br>
 using System;<br>
 namespace exercises<br>
 {<br>
@@ -84,7 +85,7 @@ Output:<br>
 
 
 
-3)
+3)C# program to illustrate multilevel inheritance with virtual methods(displaying student details)<br><br>
 using System;<br>
 namespace Exercises<br>
 {<br>
@@ -192,7 +193,7 @@ OUTPUT:<br><br>
 
 
 
-4)<br><br>
+4)C# program to craete a gray code<br><br>
 
 using System;<br>
 namespace Exercises<br>
@@ -223,7 +224,7 @@ OUTPUT:<br><br>
 
 
 
-5)<br>
+5)C# program to calculate volume of 2 boxes and find the resultant volume after addition of 2 boxes by impementing operator overloading<br><br>
 using System;<br>
 namespace Exercises<br>
 {<br>
@@ -267,7 +268,7 @@ namespace Exercises<br>
     ![image](https://user-images.githubusercontent.com/98145023/152297844-fb63b288-5094-4980-ad4b-327c662e0cde.png)<br><br><br><br>
 
 
-6)<br>
+6)C# program to implement priciples of delegates(converting input string to uppercase first,last and entire string)<br><br>
 using System;<br>
 namespace Exercices<br>
 {<br>
@@ -311,7 +312,7 @@ OUTPUT:<br>
 
 
 
-7)<br>
+7)C# program to generate register number automatially for 100 students using static constructor<br><br>
 using System;<br>
 namespace Exercises<br>
 {<br>
@@ -345,7 +346,7 @@ OUTPUT:<br>
 
 
 
-8)<br>
+8)C# program to find the frequency of the word "is" in a given sentence<br><br>
 using System;<br>
 namespace Exercises<br>
 {<br>
@@ -376,7 +377,7 @@ namespace Exercises<br>
 
         
     
-9)<br>
+9)C# program that benchmarks 2D,jagged array allocation<br><br>
 using System;<br>
 using System.Diagnostics;<br>
 namespace Exercises<br>
@@ -430,7 +431,7 @@ OUTPUT:<br>
 
 
 
-10)<br>
+10)<br><br>
 using System;<br>
 namespace Exercises<br>
 {<br>
