@@ -567,3 +567,46 @@ OUTPUT:<br>
 <br>
 ![image](https://user-images.githubusercontent.com/98145023/152489774-1abc66a8-d288-4ebf-bb46-e26bf120052b.png)
 <br><br><br>
+
+
+
+
+12)<br>
+using System;<br>
+using System.IO;<br>
+namespace Exercises<br>
+{<br>
+    class FileRead<br>
+    {<br>
+        public static void Main()<br>
+        {<br>
+            string file1;<br>
+            string file2;<br>
+            Console.Write("Enter the first file path:");<br>
+            file1 = Console.ReadLine();<br>
+            Console.Write("Enter the second file path:");<br>
+            file2 = Console.ReadLine();<br>
+            if (!File.Exists(file1))<br>
+            {<br>
+                Console.WriteLine("First file does not exist!");<br>
+            }<br>
+            else if (!File.Exists(file2))<br>
+            {<br>
+                Console.WriteLine("Second file does not exist!");<br>
+            }<br>
+            else if (File.ReadAllText(file1) == File.ReadAllText(file2))<br>
+            {<br>
+                Console.WriteLine("Both files contain the same context");<br>
+}<br>
+            else<br>
+            { <br>
+        Console.WriteLine("Contents of files are not same");<br>
+    }<br>
+}<br>
+}<br>
+}<br>
+OUTPUT:<br>
+![image](https://user-images.githubusercontent.com/98145023/154413241-e1be7210-7b81-42f5-803f-260f9b2ebd08.png)<br>
+![image](https://user-images.githubusercontent.com/98145023/154413556-74928336-4601-4601-887b-fd2a528a72e7.png)<br><br><br>
+
+
