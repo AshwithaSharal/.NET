@@ -669,3 +669,43 @@ OUTPUT:<br>
 ![image](https://user-images.githubusercontent.com/98145023/154418045-302bafb1-62ab-48e0-b6c4-fc79b3b158b2.png)<br><br>
 <br>
 
+
+13)<br>
+using System;<br>
+using System.Threading;<br>
+namespace Exercises<br>
+{<br>
+    class ThreadPoolProg<br>
+    {<br>
+        public void ThreadFun1(object obj)<br>
+        {<br>
+            int loop = 0;<br>
+            for(loop=0; loop<=4; loop++)<br>
+            {<br>
+                Console.WriteLine("Thread1 is executing");<br>
+            }<br>
+        }<br>
+         public void ThreadFun2(object obj)<br>
+        {<br>
+            int loop = 0;<br>
+            for (loop = 0; loop <= 4; loop++)<br>
+            {<br>
+                Console.WriteLine("Thread2 is executing");<br>
+            }<br>
+        }<br>
+        public static void Main()<br>
+        {<br>
+            ThreadPoolProg TP = new ThreadPoolProg();<br>
+        for(int i=0;i<2;i++)<br>
+            {<br>
+                ThreadPool.QueueUserWorkItem(new WaitCallback(TP.ThreadFun1));<br>
+                ThreadPool.QueueUserWorkItem(new WaitCallback(TP.ThreadFun2));<br>
+            }<br>
+            Console.ReadKey();<br>
+        }<br>
+    }<br>
+}<br><br>
+OUTPUT:<br>
+![image](https://user-images.githubusercontent.com/98145023/154420655-1553be61-c4f8-4d29-9e4e-7fcfa88c1ce8.png)
+<br><br><br>
+
