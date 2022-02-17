@@ -709,3 +709,53 @@ OUTPUT:<br>
 ![image](https://user-images.githubusercontent.com/98145023/154420655-1553be61-c4f8-4d29-9e4e-7fcfa88c1ce8.png)
 <br><br><br>
 
+
+
+15)<br>
+using System;<br>
+namespace Exercises<br>
+{<br>
+    class ExceptionHandling<br>
+    {<br>
+        static void Main(String[] args)<br>
+        {<br>
+            Age a = new Age();<br>
+          try<br>
+        {<br>
+                a.displayAge();<br>
+            }<br>
+            catch (AgeIsNegativeException e)<br>
+            {<br>
+                Console.WriteLine("AgeIsNegativeException:{0}", e.Message);<br>
+            }<br>
+            finally<br>
+            {<br>
+                Console.WriteLine("Execution of finally block is done");<br>
+            }<br>
+        }<br>
+    }<br>
+}<br>
+public class AgeIsNegativeException : Exception<br>
+{<br>
+    public AgeIsNegativeException(string message):base (message)<br>
+    { <br>
+}<br>
+}<br>
+public class AgeV
+{<br>
+    int age = -5;<br>
+    public void displayAge()<br>
+    {<br>
+        if (age < 0)<br>
+        {<br>
+            throw (new AgeIsNegativeException("Age cannot be negative"));<br>
+        }<br>
+        else<br>
+        {<br>
+            Console.WriteLine("Age is:{0}", age);<br>
+        }<br>
+    }<br>
+}<br><br>
+OUTPUT:<br>
+![image](https://user-images.githubusercontent.com/98145023/154423674-f541253e-4c27-40e0-9c7a-81efbdb09c38.png)<br><br><br><br>
+
