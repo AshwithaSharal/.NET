@@ -431,7 +431,7 @@ OUTPUT:<br>
 
 
 
-10)<br><br>
+10)C# progarm to find the sum of the value on diagonal of the matrix<br><br>
 using System;<br>
 namespace Exercises<br>
 {<br>
@@ -484,7 +484,7 @@ OUTPUT:<br>
 
 
     
-11)<br>
+11)C# progarm to create a file,check the existence of a file and read the contents of the file<br>
 using System;<br>
   using System.IO;<br>
 namespace Exercises<br>
@@ -572,7 +572,7 @@ OUTPUT:<br>
 
 
 
-12)<br>
+12)C# progarm to perform file comparison<br><br>
 using System;<br>
 using System.IO;<br>
 namespace Exercises<br>
@@ -611,7 +611,7 @@ OUTPUT:<br>
 ![image](https://user-images.githubusercontent.com/98145023/154413556-74928336-4601-4601-887b-fd2a528a72e7.png)<br><br><br>
 
 
-13)<br>
+13)C# progarm to implement IComaparable interface<br><br>
 using System;<br>
 namespace Exercises<br>
 {<br>
@@ -671,7 +671,7 @@ OUTPUT:<br>
 <br>
 
 
-13)<br>
+14)C# progarm to create thread pools<br><br>
 using System;<br>
 using System.Threading;<br>
 namespace Exercises<br>
@@ -712,7 +712,7 @@ OUTPUT:<br>
 
 
 
-15)<br>
+15)C# progarm to demonstrate error handling using try,catch and finally block.<br><br>
 using System;<br>
 namespace Exercises<br>
 {<br>
