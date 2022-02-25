@@ -840,7 +840,7 @@ OUTPUT:<br>
 ![image](https://user-images.githubusercontent.com/98145023/155661998-5100bad7-e8a4-4581-ab9a-324905bd73bb.png)<br><br><br>
 
 
-
+Write a c# program to print factorial of a number.<br>
 using System;  <br>
   public class FactorialExample  <br>
    {  <br>
