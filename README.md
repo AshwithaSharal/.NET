@@ -906,3 +906,10 @@ using System;  <br>
        Console.Write("Sum is= "+sum);  <br>     
      }  <br>
   }  <br>
+  OUTPUT:<br>
+  ![image](https://user-images.githubusercontent.com/98145023/155667166-9820b26a-0c80-4b2a-ae7a-3b66a11dda2b.png)
+<br><br><br>
+
+
+
+Write a c# program to reverse given number.<br>
