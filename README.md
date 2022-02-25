@@ -813,5 +813,29 @@ Outout:<br>
 <br>
 
 
-
+Write a c# program to check palindrome number.<br>
+using System;<br>
+public class PalindromeExample<br>
+{<br>
+    public static void Main(string[] args)<br>
+    {<br>
+        int n, r, sum = 0, temp;<br>
+        Console.Write("Enter the Number: ");<br>
+        n = int.Parse(Console.ReadLine());<br>
+        temp = n;<br>
+        while (n > 0)<br>
+        {<br>
+            r = n % 10;<br>
+            sum = (sum * 10) + r;<br>
+            n = n / 10;<br>
+        }<br>
+        if (temp == sum)
+            Console.Write("Number is Palindrome.");<br>
+        else<br>
+            Console.Write("Number is not Palindrome");<br>
+    }<br>
+}<br>
+OUTPUT:
+![image](https://user-images.githubusercontent.com/98145023/155661751-9860bd02-50e1-449e-a78d-c1acc7aad6c7.png)<br>
+![image](https://user-images.githubusercontent.com/98145023/155661998-5100bad7-e8a4-4581-ab9a-324905bd73bb.png)<br><br><br>
 
