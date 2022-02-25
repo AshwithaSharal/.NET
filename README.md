@@ -839,3 +839,22 @@ OUTPUT:<br>
 ![image](https://user-images.githubusercontent.com/98145023/155661751-9860bd02-50e1-449e-a78d-c1acc7aad6c7.png)<br>
 ![image](https://user-images.githubusercontent.com/98145023/155661998-5100bad7-e8a4-4581-ab9a-324905bd73bb.png)<br><br><br>
 
+
+
+using System;  <br>
+  public class FactorialExample  <br>
+   {  <br>
+     public static void Main(string[] args)  <br>
+      {   <br>
+       int i,fact=1,number;       <br>
+       Console.Write("Enter any Number: ");  <br>     
+       number= int.Parse(Console.ReadLine());  <br>    
+       for(i=1;i<=number;i++) <br>
+      { <br>
+        fact=fact*i;  <br>     
+       }       <br>
+       Console.Write("Factorial of " +number+" is: "+fact);  <br>   
+     }  <br> 
+  }   <br>
+  OUTPUT: <br>
+  ![image](https://user-images.githubusercontent.com/98145023/155664450-96b85dfa-d1c2-463f-9436-14c111aad83b.png)<br><br><br>
