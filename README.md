@@ -858,3 +858,51 @@ using System;  <br>
   }   <br>
   OUTPUT: <br>
   ![image](https://user-images.githubusercontent.com/98145023/155664450-96b85dfa-d1c2-463f-9436-14c111aad83b.png)<br><br><br>
+
+
+
+Write a c# program to check armstrong number.<br>
+using System;  <br>
+  public class ArmstrongExample  <br>
+   {  <br>
+     public static void Main(string[] args)  <br>
+      {  <br>
+       int  n,r,sum=0,temp;  <br>    
+       Console.Write("Enter the Number= ");      <br>
+       n= int.Parse(Console.ReadLine()); <br>    
+       temp=n;      <br>
+       while(n>0)      <br>
+       {      <br>
+        r=n%10;     <br> 
+        sum=sum+(r*r*r);      <br>
+        n=n/10;      <br>
+       }      <br>
+       if(temp==sum)      <br>
+        Console.Write("Armstrong Number.");    <br>  
+       else     <br> 
+        Console.Write("Not Armstrong Number.");   <br>   
+      }  <br>
+  }  <br>
+  OUTPUT:<br>
+  ![image](https://user-images.githubusercontent.com/98145023/155665985-6daa6d8e-59b6-4ba1-89e2-e4a4976d67a0.png)<br>
+  ![image](https://user-images.githubusercontent.com/98145023/155666215-0871e9b9-77fa-4a5d-9886-71f77ae2a326.png)<br><br><br>
+
+
+Write a c# program to print sum of digits.<br>
+using System;  <br>
+  public class SumExample  <br>
+   {  <br>
+     public static void Main(string[] args)  <br>
+      {  <br>
+       int  n,sum=0,m;<br>         
+       Console.Write("Enter a number: ");      <br>
+       n= int.Parse(Console.ReadLine()); <br>    
+       while(n>0)     <br> 
+       {      <br>
+        m=n%10;     <br> 
+        sum=sum+m;   <br>   
+        n=n/10;   <br>   
+       }      <br>
+       Console.Write("Sum is= "+sum);  <br>     
+     }  <br>
+  }  <br>
