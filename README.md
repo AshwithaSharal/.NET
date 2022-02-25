@@ -913,3 +913,23 @@ using System;  <br>
 
 
 Write a c# program to reverse given number.<br>
+using System;<br>
+public class ReverseExample<br>
+{<br>
+    public static void Main(string[] args)<br>
+    {<br>
+        int n, reverse = 0, rem;<br>
+        Console.Write("Enter a number: ");<br>
+        n = int.Parse(Console.ReadLine());<br>
+        while (n != 0)<br>
+        {<br>
+            rem = n % 10;<br>
+            reverse = reverse * 10 + rem;<br>
+            n /= 10;<br>
+        }<br>
+        Console.Write("Reversed Number: " + reverse);<br>
+    }<br>
+}<br>
+OUTPUT:<br>
+![image](https://user-images.githubusercontent.com/98145023/155668217-8eceeaf9-474c-40fb-878a-5a6207fdacf2.png)<br>
+<br><br><br>
