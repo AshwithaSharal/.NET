@@ -760,3 +760,27 @@ public class AgeV
 OUTPUT:<br>
 ![image](https://user-images.githubusercontent.com/98145023/154423674-f541253e-4c27-40e0-9c7a-81efbdb09c38.png)<br><br><br><br>
 
+
+16)Write a c# program to print fibonacci series without using recursion and using recursion.<br>
+using System;<br>
+public class FibonacciExample<br>
+{<br>
+    public static void Main(string[] args)<br>
+    {<br>
+        int n1 = 0, n2 = 1, n3, i, number;<br>
+        Console.Write("Enter the number of elements: ");<br>
+        number = int.Parse(Console.ReadLine());<br>
+        Console.Write(n1 + " " + n2 + " ");<br>
+        for (i = 2; i < number; ++i)<br>  
+        {<br>
+            n3 = n1 + n2;<br>
+            Console.Write(n3 + " ");<br>
+            n1 = n2;<br>
+            n2 = n3;<br>
+        }<br>
+    }<br>
+}<br>
+OUTPUT:<br>
+![image](https://user-images.githubusercontent.com/98145023/155659198-60a94015-c6e5-4c86-a9ca-cbee0c856e62.png)<br><br><br>
+
+
