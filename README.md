@@ -784,3 +784,34 @@ OUTPUT:<br>
 ![image](https://user-images.githubusercontent.com/98145023/155659198-60a94015-c6e5-4c86-a9ca-cbee0c856e62.png)<br><br><br>
 
 
+Write a c# program to check prime number.<br>
+using System;<br>
+public class PrimeNumberExample<br>
+{<br>
+    public static void Main(string[] args)<br>
+    {<br>
+        int n, i, m = 0, flag = 0;<br>
+        Console.Write("Enter the Number to check Prime: ");<br>
+        n = int.Parse(Console.ReadLine());<br>
+        m = n / 2;<br>
+        for (i = 2; i <= m; i++)<br>
+        {<br>
+            if (n % i == 0)<br>
+            {<br>
+                Console.Write("Number is not Prime.");<br>
+                flag = 1;<br>
+                break;<br>
+            }<br>
+        }<br>
+        if (flag == 0)<br>
+            Console.Write("Number is Prime.");<br>
+    }<br>
+}<br>
+Outout:<br>
+![image](https://user-images.githubusercontent.com/98145023/155660647-0a68d7d0-03ed-4c95-aaa5-a41670619a02.png)<br>
+![image](https://user-images.githubusercontent.com/98145023/155660763-a7a4539e-17c4-453d-afca-9c81ef5fb82a.png)<br><br>
+<br>
+
+
+
+
