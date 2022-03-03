@@ -933,3 +933,22 @@ public class ReverseExample<br>
 OUTPUT:<br>
 ![image](https://user-images.githubusercontent.com/98145023/155668217-8eceeaf9-474c-40fb-878a-5a6207fdacf2.png)<br>
 <br><br><br>
+
+
+ C# example to swap two numbers without using third variable.
+
+using System;<br>
+  public class SwapExample<br>  
+   {  <br>
+     public static void Main(string[] args)<br>  
+      {<br>  
+       int  a=5, b=10;<br>            
+       Console.WriteLine("Before swap a= "+a+" b= "+b);<br>    
+       a=a*b; //a=50 (5*10)<br>      
+       b=a/b; //b=5 (50/10)<br>      
+       a=a/b; //a=10 (50/5) <br>   
+       Console.Write("After swap a= "+a+" b= "+b); <br>      
+     }<br>  
+     }<br>
+     OUTPUT:<br>
+     ![image](https://user-images.githubusercontent.com/98145023/156510041-79d9f844-3cdb-4d5e-be23-890ec1bc42ff.png)<br><br><br>
