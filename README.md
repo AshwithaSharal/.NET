@@ -936,7 +936,6 @@ OUTPUT:<br>
 
 
  C# example to swap two numbers without using third variable.
-
 using System;<br>
   public class SwapExample<br>  
    {  <br>
@@ -965,7 +964,6 @@ using System.Linq;<br>
 using System.Text;<br>
 using System.Threading.Tasks;<br>
 using System.Windows.Forms;<br>
-
 namespace WindowsFormsApp2<br>
 {<br>
     public partial class Form1 : Form<br>
@@ -1059,7 +1057,7 @@ namespace WindowsFormsApp5<br>
         }<br>
         private void button1_Click(object sender, EventArgs e)<br>
         {<br>
-                string inputString, revstr = "";<br>
+          string inputString, revstr = "";<br>
                 int Length;<br>
                 inputString = textBox1.Text;<br>
                 Length = inputString.Length - 1;<br>
@@ -1070,14 +1068,12 @@ namespace WindowsFormsApp5<br>
                 }<br>
                 MessageBox.Show("Reverse String Is : " + revstr, "Result");<br>
             }<br>
-
-         private void button2_Click(object sender, EventArgs e)<br>
+private void button2_Click(object sender, EventArgs e)<br>
         {<br>
             string inputString;<br>
             inputString = textBox1.Text;<br>
             MessageBox.Show("The String After Trimming : " + inputString.Trim(), "Result");<br>
         }<br>
-
         private void button3_Click(object sender, EventArgs e)<br>
         {<br>
                 string inputString;<br>
