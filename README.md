@@ -1039,4 +1039,102 @@ OUTPUT:<br>
 ![image](https://user-images.githubusercontent.com/98145023/157814187-79a2d650-7ad2-404b-8bff-860507894126.png)<br><br><br>
 
 
-     
+C# Program to Perform Reversal, Padding and Trimming Operations on string<br>
+using System;<br>
+using System.Collections.Generic;<br>
+using System.ComponentModel;<br>
+using System.Data;<br>
+using System.Drawing;<br>
+using System.Linq;<br>
+using System.Text;<br>
+using System.Threading.Tasks;<br>
+using System.Windows.Forms;<br>
+namespace WindowsFormsApp5<br>
+{<br>
+    public partial class Form1 : Form<br>
+    {<br>
+        public Form1()<br>
+        {<br>
+            InitializeComponent();<br>
+        }<br>
+        private void button1_Click(object sender, EventArgs e)<br>
+        {<br>
+                string inputString, revstr = "";<br>
+                int Length;<br>
+                inputString = textBox1.Text;<br>
+                Length = inputString.Length - 1;<br>
+                while (Length >= 0)<br>
+                {<br>
+                    revstr = revstr + inputString[Length];<br>
+                    Length--;<br>
+                }<br>
+                MessageBox.Show("Reverse String Is : " + revstr, "Result");<br>
+            }<br>
+
+         private void button2_Click(object sender, EventArgs e)<br>
+        {<br>
+            string inputString;<br>
+            inputString = textBox1.Text;<br>
+            MessageBox.Show("The String After Trimming : " + inputString.Trim(), "Result");<br>
+        }<br>
+
+        private void button3_Click(object sender, EventArgs e)<br>
+        {<br>
+                string inputString;<br>
+                inputString = textBox1.Text;<br>
+                inputString = inputString.PadLeft(5, '*');<br>
+                inputString = inputString.PadRight(5, '*');<br>
+                MessageBox.Show("String After Padding : " + inputString, "Result");<br>
+            }<br>
+        }<br>
+    }<br>
+    OUTPUT:<br>
+    ![image](https://user-images.githubusercontent.com/98145023/158752451-cc9e01da-735e-486c-8b67-543ff8311cca.png)<br><br><br>
+
+    
+C# Program to Create a Progress Bar Control.<br>
+using System;<br>
+using System.Collections.Generic;<br>
+using System.ComponentModel;<br>
+using System.Data;<br>
+using System.Drawing;<br>
+using System.Linq;<br>
+using System.Text;<br>
+using System.Threading;<br>
+using System.Windows.Forms;<br>
+
+namespace WindowsFormsApp6<br>
+{<br>
+    public partial class Form1 : Form<br>
+    {<br>
+        public Form1()<br>
+        {<br>
+            InitializeComponent();<br>
+        }<br>
+        private void Form1_Load(object sender, EventArgs e)<br>
+        {<br>
+            backgroundWorker1.WorkerReportsProgress = true;<br>
+            backgroundWorker1.RunWorkerAsync();<br>
+        }<br>
+
+        private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)<br>
+        {<br>
+            for (int i = 1; i <= 100; i++)<br>
+            {<br>
+                Thread.Sleep(50);<br>
+                backgroundWorker1.ReportProgress(i);<br>
+            }<br>
+        }<br>
+
+        private void backgroundWorker1_ProgressChanged(object sender, ProgressChangedEventArgs e)<br>
+        {<br>
+            progressBar1.Value = e.ProgressPercentage;<br>
+            this.Text = "Progress: " + e.ProgressPercentage.ToString() + "%";<br>
+        }<br>
+    }<br>
+}<br>
+OUTPUT:<br>
+![image](https://user-images.githubusercontent.com/98145023/158753271-b9aac8c0-e5ee-49f8-ad24-6e311499744a.png)<br><br><br>
+
+
+ 
