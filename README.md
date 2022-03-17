@@ -1102,7 +1102,6 @@ using System.Linq;<br>
 using System.Text;<br>
 using System.Threading;<br>
 using System.Windows.Forms;<br>
-
 namespace WindowsFormsApp6<br>
 {<br>
     public partial class Form1 : Form<br>
@@ -1116,7 +1115,6 @@ namespace WindowsFormsApp6<br>
             backgroundWorker1.WorkerReportsProgress = true;<br>
             backgroundWorker1.RunWorkerAsync();<br>
         }<br>
-
         private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)<br>
         {<br>
             for (int i = 1; i <= 100; i++)<br>
@@ -1125,8 +1123,7 @@ namespace WindowsFormsApp6<br>
                 backgroundWorker1.ReportProgress(i);<br>
             }<br>
         }<br>
-
-        private void backgroundWorker1_ProgressChanged(object sender, ProgressChangedEventArgs e)<br>
+private void backgroundWorker1_ProgressChanged(object sender, ProgressChangedEventArgs e)<br>
         {<br>
             progressBar1.Value = e.ProgressPercentage;<br>
             this.Text = "Progress: " + e.ProgressPercentage.ToString() + "%";<br>
