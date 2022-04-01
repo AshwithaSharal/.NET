@@ -1401,7 +1401,6 @@ using System.Text;<br>
 using System.Threading.Tasks;<br>
 using System.Windows.Forms;<br>
 using System.Drawing.Drawing2D;<br>
-
 namespace WindowsFormsApp13<br>
 {<br>
     public partial class Form1 : Form<br>
@@ -1413,8 +1412,7 @@ namespace WindowsFormsApp13<br>
             this.root = null;<br>
             test();<br>
         }<br>
-
-        void test()<br>
+void test()<br>
         {<br>
             textBox2.Text = "5";<br>
             btnAdd_Click(btnAdd, null);<br>
@@ -1433,13 +1431,7 @@ namespace WindowsFormsApp13<br>
             textBox2.Text = "8";<br>
             btnAdd_Click(btnAdd, null);<br>
         }<br>
-
-        private void Form1_Load(object sender, EventArgs e)<br>
-        {<br>
-
-        }<br>
-
-        private void btnAdd_Click(object sender, EventArgs e)<br>
+private void btnAdd_Click(object sender, EventArgs e)<br>
         {<br>
             int value = int.Parse(textBox2.Text);<br>
             if (root == null)<br>
@@ -1448,63 +1440,48 @@ namespace WindowsFormsApp13<br>
             {<br>
                 if (root.Add(value) == false)<br>
                     MessageBox.Show("The value already exists!");<br>
-
-            }<br>
+ }<br>
             drawTree();<br>
-
-        }<br>
-
-        private void button7_Click(object sender, EventArgs e)<br>
+}<br>
+ private void button7_Click(object sender, EventArgs e)<br>
         {<br>
             root = null;<br>
             pictureBox2.Image = null;<br>
         }<br>
-
-        private void button6_Click(object sender, EventArgs e)<br>
+private void button6_Click(object sender, EventArgs e)<br>
         {<br>
             int value = int.Parse(textBox2.Text);<br>
             if (root != null)<br>
-
-            {<br>
+ {<br>
                 bool status = root.Remove(value, root, ref root);<br>
                 if (status == false)<br>
-
-                {<br>
+ {<br>
                     MessageBox.Show("the value does not exists");<br>
                 }<br>
-
-            }<br>
+ }<br>
             drawTree();<br>
         }<br>
-
-        private void button8_Click(object sender, EventArgs e)<br>
+private void button8_Click(object sender, EventArgs e)<br>
         {<br>
             string msg;<br>
             int value = int.Parse(textBox2.Text);<br>
             if (root == null)<br>
-
-            {<br>
+ {<br>
                 msg = "Tree is empty";<br>
             }<br>
             else<br>
-
-            {<br>
+{<br>
                 if (root.Exists(value))<br>
-
-                {<br>
+{<br>
                     msg = "Value found";<br>
                 }<br>
                 else<br>
-
-                {<br>
+ {<br>
                     msg = "Value not found";<br>
-
-                }<br>
-
-            }<br>
+}<br>
+}<br>
             MessageBox.Show(msg);<br>
-
-        }<br>
+            }<br>
         void drawTree()<br>
         {<br>
             if (root != null)<br>
