@@ -1617,7 +1617,6 @@ maxHeight);<br>
             g.SmoothingMode = SmoothingMode.HighQuality;<br>
             g.FillRectangle(Brushes.White, new Rectangle(new Point(0, 0), resultSize));<br>
             g.DrawImage(nodeBg, lSize.Width - nodeBg.Width / 2, 0);<br>
-
             string str = "" + value;<br>
             g.DrawString(str, font, Brushes.Black, lSize.Width - nodeBg.Width / 2 + 7,
            nodeBg.Height / 2f - 12);<br>
