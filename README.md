@@ -1668,4 +1668,66 @@ maxHeight);<br>
 }<br>
 OUTPUT:<br>
 ![image](https://user-images.githubusercontent.com/98145023/161211386-907dacc3-f5b4-4619-89a2-5d4c61d86f71.png)<br><br><br>
+    
+    
+    
+MONEY COVERSION<br>
+using System;<br>
+using System.Collections.Generic;<br>
+using System.ComponentModel;<br>
+using System.Data;<br>
+using System.Drawing;<br>
+using System.Linq;<br>
+using System.Text;<br>
+using System.Threading.Tasks;<br>
+using System.Windows.Forms;<br>
+namespace WindowsFormsApp15<br>
+{<br>
+    public partial class Form1 : Form<br>
+    {<br>
+        public Form1()<br>
+        {<br>
+            InitializeComponent();<br>
+        }<br>
+private void button1_Click(object sender, EventArgs e)<br>
+        {<br>
+            label4.Visible = true;<br>
+            if(textBox1.Text=="")<br>
+            {<br>
+                label4.Text = "Enter the amount";<br>
+            }<br>
+            else<br>
+            {<br>
+                Double convertedamt = Convert.ToDouble(textBox1.Text);<br>
+                if(comboBox1.SelectedItem== "INR" && comboBox2.SelectedItem== "USD")<br>
+                {<br>
+                    Double a = convertedamt / 74;<br>
+                    label4.Text = a + "$";<br>
+                }<br>
+                else if(comboBox1.SelectedItem == "INR" && comboBox2.SelectedItem == "SAR")<br>
+                {<br>
+                    Double a = convertedamt / 17;<br>
+                    label4.Text = a + "SAR";<br>
+                }<br>
+                else if(comboBox1.SelectedItem == "INR" && comboBox2.SelectedItem == "EUR")<br>
+                {<br>
+                    Double a = convertedamt / 11;<br>
+                    label4.Text = a + "EUR";<br>
+                }<br>
+                else<br>
+                {<br>
+                    label4.Text = "PLEASE ENTER THE CONVERSION CODE";<br>
+                }<br>
+            }<br>
+        }<br>
+private void button2_Click(object sender, EventArgs e)<br>
+        {<br>
+            textBox1.Text = "";<br>
+            label4.Text = "";<br>
+        }<br>
+    }<br>
+}<br>
+OUTPUT:<br>
+    ![image](https://user-images.githubusercontent.com/98145023/165696048-d8da632f-bbb7-4987-a4fa-9c8ff7b06796.png)<br><br><br><br>
+
 
