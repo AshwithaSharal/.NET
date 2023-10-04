@@ -1,4 +1,5 @@
-﻿using System;
+#1
+using System;
 
 public class FibonacciExample
 {
@@ -14,6 +15,956 @@ public class FibonacciExample
             Console.Write(n3 + " ");
             n1 = n2;
             n2 = n3;
+        }
+    }
+}
+
+
+#2
+﻿using System;
+
+namespace vs02
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int n, i, m = 0, flag = 0;
+            Console.WriteLine("Enter the number to check prime:");
+            n = int.Parse(Console.ReadLine());
+            m = n / 2;
+            for(i=2;i<=m;i++)
+            {
+                if(n%i==0)
+                {
+                    Console.WriteLine("Number is not Prime: ");
+                    flag = 1;
+                    break;
+
+                }
+            }
+            if (flag == 0)
+                Console.WriteLine("Number is Prime");
+        }
+    }
+}
+
+
+
+#3
+﻿using System;
+
+namespace vs03
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int n, r, sum = 0, temp;
+            Console.WriteLine("Enter the number:");
+            n = int.Parse(Console.ReadLine());
+            temp = n;
+            while(n>0)
+            {
+                r = n % 10;
+                sum = (sum * 10) + r;
+                n = n / 10;
+            }
+            if (temp == sum)
+                Console.WriteLine("Number is a Palindrome");
+            else
+                Console.WriteLine("Number is not a Palindrome");
+        }
+    }
+}
+
+
+
+#4
+﻿using System;
+
+namespace vs04
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int i, fact = 1, num;
+            Console.WriteLine("Enter any number:");
+            num = int.Parse(Console.ReadLine());
+            for(i=1;i<=num;i++)
+            {
+                fact = fact * i;
+            }
+            Console.WriteLine("Factorial of " + num + "is:" + fact);
+        }
+    }
+}
+
+
+5
+﻿using System;
+
+namespace vs05
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int n, r, sum = 0, temp;
+            Console.WriteLine("Enter the number");
+            n = int.Parse(Console.ReadLine());
+            temp = n;
+            while (n > 0)
+            {
+                r = n % 10;
+                sum = sum + (r * r * r);
+                n = n / 10;
+            }
+            if (temp == sum)
+                Console.WriteLine("Armstrong number");
+            else
+                Console.WriteLine("Not anArmstrong number");
+        }
+    }
+}
+
+
+
+#6
+﻿using System;
+
+namespace vs06
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int n, sum = 0, m;
+            Console.WriteLine("Enter the number:");
+            n = int.Parse(Console.ReadLine());
+            while(n>0)
+            {
+                m = n % 10;
+                sum = sum + m;
+                n = n / 10;
+            }
+            Console.WriteLine("Sum is=" + sum);
+        }
+    }
+}
+
+
+#7
+﻿using System;
+
+namespace vs07
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int n, rev = 0, rem;
+            Console.WriteLine("Enter a number");
+            n = int.Parse(Console.ReadLine());
+            while(n!=0)
+            {
+                rem = n % 10;
+                rev = rev * 10 + rem;
+                n = n / 10;
+            }
+            Console.WriteLine("Reversed number:" + rev);
+        }
+    }
+}
+
+
+#8
+﻿using System;
+
+namespace project5
+{
+    class GrayCode
+    {
+        static int getGray(int n)
+        {
+            return n ^ (n >> 1);
+
+
+        }
+        static void Main(string[] args)
+        {
+            int inputnum, graynum;
+            Console.Write("\n Enter the decimal number: ");
+            inputnum = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("\n Binary equivalent of {0} : {1}", inputnum, Convert.ToString(inputnum, 2));
+            graynum = getGray(inputnum);
+            Console.WriteLine("\n Gray code equivalent of {0} : {1}", inputnum, Convert.ToString(graynum, 2));
+        }
+
+    }
+}
+
+
+
+#9
+﻿using System;
+
+namespace project5
+{
+    class GrayCode
+    {
+        static int getGray(int n)
+        {
+            return n ^ (n >> 1);
+
+
+        }
+        static void Main(string[] args)
+        {
+            int inputnum, graynum;
+            Console.Write("\n Enter the decimal number: ");
+            inputnum = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("\n Binary equivalent of {0} : {1}", inputnum, Convert.ToString(inputnum, 2));
+            graynum = getGray(inputnum);
+            Console.WriteLine("\n Gray code equivalent of {0} : {1}", inputnum, Convert.ToString(graynum, 2));
+        }
+
+    }
+}
+
+
+#10
+﻿using System;
+
+namespace s1ConsoleApp4
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int number, digit = 1;
+            Console.WriteLine("\n Enter the number of lines:");
+            number = Convert.ToInt32(Console.ReadLine());
+
+            for (int i = 1; i<=number; i++)
+            {
+                for (int space=number-i; space>0; space--)
+                {
+                    Console.Write(" ");
+                }
+                for (int j = 0; j < i; j++)
+                {
+                    Console.Write(digit + " ");
+                    digit = (digit == 1) ? 0 : 1;
+                }
+                Console.Write("\n");
+
+            }
+        }
+    }
+}
+
+
+
+#11
+﻿using System;
+
+namespace s2ConsoleApp4
+{
+    class Program2
+    {
+        static void Main(string[] args)
+        {
+            int num1, num2, sum1 = 0, sum2 = 0;
+            Console.WriteLine("\n-----------AMICABLE NUMBERS-----------\n");
+            Console.Write("\n Enter the first number:");
+            num1 = Convert.ToInt32(Console.ReadLine());
+            Console.Write("\n Enter the second number:");
+            num2 = Convert.ToInt32(Console.ReadLine());
+
+            for (int i = 1; i < num1; i++)
+            {
+                if (num1 % i == 0)
+                {
+                    sum1 += i;
+                }
+
+            }
+            for(int i=1; i<num2; i++)
+            {
+                if(num2%i==0)
+                {
+                    sum2 += i;
+
+                }
+            }
+            if(sum1==num2 && sum2==num1)
+            {
+                Console.WriteLine("\n The number {0} and {1} are amicable:", num1, num2);
+            }
+            else
+            {
+                Console.WriteLine("\n The numbers {0} and {1} are not amicable:", num1, num2);
+            }
+        }
+    }
+}
+
+
+#12
+﻿using System;
+
+
+namespace s3ConsoleApp4
+{
+    class PersonalDetails
+    { 
+    string name;
+    int age;
+    string gender;
+    public PersonalDetails(string name, int age, string gender)
+    {
+        this.name = name;
+        this.age = age;
+        this.gender = gender;
+
+    }
+    public virtual void Display()
+    {
+        Console.WriteLine("\n-----------Personal Details-----------");
+        Console.WriteLine("Name         :" + name);
+        Console.WriteLine("Age          :" + age);
+        Console.WriteLine("Gender       :" + gender);
+
+    }
+}
+       
+    
+
+class CourseDetails : PersonalDetails
+{
+    int regno;
+    string course;
+    int semester;
+    public CourseDetails(string name, int age, string gender, int regno, string course, int semester) : base(name, age, gender)
+    {
+        this.regno = regno;
+        this.course = course;
+        this.semester = semester;
+
+    }
+    public override void Display()
+    {
+        base.Display();
+        Console.WriteLine("\n -----------Course Details-----------\n");
+        Console.WriteLine("Register Number          :" + regno);
+        Console.WriteLine("Course                   :" + course);
+        Console.WriteLine("Semester                 :" + semester);
+          
+            
+    }
+}
+class MarksDetails : CourseDetails
+{
+    int[] marks = new int[5];
+    int total;
+    float average;
+    string grade;
+    int flagTail;
+    public MarksDetails(string name, int age, string gender, int regno, string course, int semester, int[] marks) : base(name, gender, regno, course, semester)
+    {
+        total = 0;
+        for (int i = 0; i < 5; i++)
+        {
+            this.marks[i] = marks[i];
+            total += marks[i];
+            if (marks[i] < 35)
+            {
+                flagFail = 1;
+
+            }
+
+        }
+        Calculate();
+    }
+    private void Calculate()
+    { 
+            average = total / 5;
+            if (flagFail == 1 || average < 40)
+                grade = "Fail";
+            else if (average >= 70)
+                grade = "Distinction";
+            else if (average >= 60)
+                grade = "First Class";
+            else if (average >= 50)
+                grade = "Second Class";
+            else
+                grade = "Pass Class";
+
+    }
+        public override void Display()
+        {
+        base.Display();
+        Console.WriteLine("/n-----------Marks Details-----------/n");
+        Console.Write("Marks in 5 subjects:");
+        for (int i = 0; i < 5; i++)
+        { 
+            Console.Write(marks[i] + " ");
+            Console.WriteLine();
+            Console.WriteLine("total            :" + total);
+            Console.WriteLine("Average          :" + average);
+            Console.WriteLine("Grade            :" + grade);
+
+        }
+}
+class Multilevel
+    {
+        public static void Main(string[] args)
+        {
+            MarksDetails Student1 = new MarksDetails("Jay", 22, "male", 2022888, "MCs", 5, new int[] { 88, 97, 86, 89, 93 });
+            Student1.Display();
+        }
+     }
+    }
+
+
+
+#guessing a number
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace guess
+{
+    public partial class Form1 : Form
+    {
+        // Intialising component 
+        static Random r = new Random();
+        int value;
+        int guessnum;
+        int win = 10;
+        int guess = 1;
+        TextBox textBox1;
+        RichTextBox richTextBox1;
+        RichTextBox richTextBox2;
+        Label label4;
+        public Form1()
+        {
+            InitializeComponent();
+            
+                value = r.Next(10);
+                this.Controls.Clear();
+                this.BackColor = Color.SkyBlue;
+                this.AutoSize = true;
+                this.Padding = new Padding(16);
+
+                Label label = new Label();
+                label.Text = "Pick a number between 1 and 100";
+                label.Bounds = new Rectangle(10, 20, 340, 40);
+                label.Font = new Font("Arial", 16);
+                textBox1 = new TextBox();
+                textBox1.Bounds = new Rectangle(20, 50, 120, 80);
+                textBox1.Font = new Font("Arial", 24);
+                button1 = new Button();
+                button1.Text = " Check Your Guess ";
+                button1.Bounds = new Rectangle(160, 50, 120, 40);
+                button1.BackColor = Color.LightGray;
+                button1.Click += new EventHandler(button1_Click);
+                Label label2 = new Label();
+                label2.Text = "Low Guess";
+                label2.Bounds = new Rectangle(20, 150, 160, 40);
+                label2.Font = new Font("Arial", 18);
+                richTextBox1 = new RichTextBox();
+                richTextBox1.Bounds = new Rectangle(20, 190, 160, 300);
+                richTextBox1.Font = new Font("Arial", 16);
+                Label label3 = new Label();
+                label3.Text = "High Guess";
+                label3.Bounds = new Rectangle(180, 150, 160, 40);
+                label3.Font = new Font("Arial", 18);
+                richTextBox2 = new RichTextBox();
+                richTextBox2.Bounds = new Rectangle(180, 190, 160, 300);
+                richTextBox2.Font = new Font("Arial", 16);
+                label4 = new Label();
+                label4.Bounds = new Rectangle(20, 100, 340, 40);
+                label4.Font = new Font("Arial", 16);
+                this.Controls.Add(label);
+                this.Controls.Add(textBox1);
+                this.Controls.Add(button1);
+                this.Controls.Add(label4);
+                this.Controls.Add(label2);
+                this.Controls.Add(label3);
+                this.Controls.Add(richTextBox1);
+                this.Controls.Add(richTextBox2);
+          
+
+        }
+       
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            // Coding of game 
+            if (textBox1.Text == "")
+            {
+                return;
+            }
+            guessnum = Convert.ToInt32(textBox1.Text);
+            textBox1.Text = String.Empty;
+            if (win >= 0)
+            {
+                if (guessnum == value)
+                {
+                    MessageBox.Show("You have guessed the number! \n The number was " + value);
+                    InitializeComponent();
+                }
+                else if (guessnum < value)
+                {
+                    richTextBox1.Text += guessnum + "\n";
+                    MessageBox.Show("wrong Guess and number of guesses left are  " + (10 - guess));
+                    
+                }
+                else if (guessnum > value)
+                {
+                    richTextBox2.Text += guessnum + "\n";
+                    MessageBox.Show("wrong Guess and number of guesses left are  " + (10 - guess));
+                    
+                }
+                guess++;
+                win--;
+            }
+            if (guess == 11)
+            {
+                label4.Text = "You loose,Correct Guess is " + value;
+            }
+        }
+    }
+}
+
+   
+
+#13
+﻿using System;
+
+namespace ConsoleApp5
+{
+    using System;
+
+    namespace ex6
+    {
+        class Box
+        {
+            float width;
+            float height;
+            float length;
+            public float volume
+            {
+                get { return width * height * length; }
+            }
+            public Box(float width, float height, float length)
+            {
+                this.width = width;
+                this.height = height;
+                this.length = length;
+
+            }
+            public static float operator +(Box box1, Box box2)
+            {
+                return box1.volume + box2.volume;
+
+            }
+            public override string ToString()
+            {
+                return "box with width" + width + ",height" + height + "and length" + length;
+
+            }
+        }
+        class OperatorOverloading
+        {
+            public static void Main()
+            {
+                Box box1 = new Box(10, 20, 30);
+                Box box2 = new Box(25, 32, 15);
+                Console.WriteLine("Volume of {0} is:{1}", box1, box1.volume);
+                Console.WriteLine("Volume of {0} is:{1}", box2, box2.volume);
+                Console.WriteLine("Volume after adding boxes:{0}", box1 + box2);
+
+
+            }
+
+        }
+
+    }
+
+}
+
+
+
+#14
+﻿using System;
+
+namespace ConsoleApp6
+{
+   
+        class Delegates
+        {
+            delegate string UppercaseDelegate(string input);
+            static string UppercaseFirst(string input)
+            {
+                char[] buffer = input.ToCharArray();
+                buffer[0] = char.ToUpper(buffer[0]);
+                return new string(buffer);
+            }
+            static string UppercaseLast(string input)
+            {
+                char[] buffer = input.ToCharArray();
+                buffer[buffer.Length - 1] = char.ToUpper(buffer[buffer.Length - 1]);
+                return new string(buffer);
+
+            }
+            static string UppercaseAll(string input)
+            {
+                return input.ToUpper();
+
+            }
+            static void WriteOutput(string input, UppercaseDelegate del)
+            {
+                Console.WriteLine("Input string L: {0}", input);
+                Console.WriteLine("Output string: {0}", del(input));
+
+            }
+            static void Main()
+            {
+                WriteOutput("tom", new UppercaseDelegate(UppercaseFirst));
+                WriteOutput("tom", new UppercaseDelegate(UppercaseLast));
+                WriteOutput("tom", new UppercaseDelegate(UppercaseAll));
+                Console.ReadLine();
+
+            }
+        }
+    
+}
+
+
+
+#15
+﻿using System;
+
+namespace ConsoleApp7
+{
+    class RegisterNum
+    {
+        int regno;
+        static int startnum;
+        static RegisterNum()
+        {
+            startnum = 2022000;
+        }
+        RegisterNum()
+        {
+            regno = ++startnum;
+        }
+
+
+
+
+        public static void Main(string[] args)
+        {
+            for (int i = 0; i < 100; i++)
+            {
+                RegisterNum student = new RegisterNum();
+
+                Console.WriteLine("Student {0}: {1}", i + 1, student.regno);
+            }
+        }
+    }
+}
+
+
+
+#16
+﻿using System;
+using System.Diagnostics;
+
+namespace ConsoleApp9
+{
+    class Bma
+    {
+        const int _max = 10000;
+        static void Main(string[] args)
+        {
+            var Arr2d = new int[100, 100];
+            var ArrJagged = new int[100][];
+            for(int i=0; i<100; i++)
+            {
+                ArrJagged[i] = new int[100];
+
+            }
+            var stopwatch2d = Stopwatch.StartNew();
+            for(int i=0;i<_max;i++)
+            {
+                for (int j = 0; j < 100; j++)
+                {
+                    for (int k = 0; k < 100; k++)
+                    {
+                        Arr2d[j, k] = k;
+                    }
+                }
+            }
+            stopwatch2d.Stop();
+            var stopwatchjagged = Stopwatch.StartNew();
+            for(int i=0;i<_max;i++)
+            {
+                for (int j = 0; j < 100; j++)
+                {
+                    for (int k = 0; k < 100; k++)
+                    {
+                        ArrJagged[j][k] = k;
+
+                    }
+                }
+            }
+            stopwatchjagged.Stop();
+            Console.Write("\n Time taken gor allocation in case of 2d array:");
+            Console.WriteLine(stopwatch2d.Elapsed.TotalMilliseconds + "milliseconds");
+            Console.Write("\nTime taken for allocation in case of jagged array:");
+            Console.WriteLine(stopwatchjagged.Elapsed.TotalMilliseconds + "milliseconds");
+        }
+    }
+}
+
+
+
+#17
+﻿using System;
+
+namespace ConsoleApp11
+{
+    class Sumofdiagonals
+    {
+        static void Main(string[] args)
+        {
+            int Maxrow, Maxcol, sum = 0;
+            int[,] Matrix;
+            Console.Write("\n-----SUM OF DIAGONAL OF A MATRIX-----\n");
+            Console.WriteLine("Enter the number of rows:");
+            Maxrow = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter the number of columns:");
+            Maxcol = Convert.ToInt32(Console.ReadLine());
+            if(Maxrow!=Maxcol)
+            {
+                Console.WriteLine("The dimensions entered are not of a square matrix");
+                Console.WriteLine("Exiting the program");
+                return;
+            }
+            Matrix = new int[Maxrow, Maxrow];
+            for(int i=0;i<Maxrow;i++)
+            {
+                for(int j=0;j<Maxcol;j++)
+                {
+                    Console.WriteLine("Enter the {0},{1} th element of the matrix:", (i + 1), (j + 1));
+                    Matrix[i, j] = Convert.ToInt32(Console.ReadLine());
+                }
+            }
+            Console.WriteLine("The entered matrix is:");
+            for(int i=0;i<Maxrow;i++)
+            {
+                for (int j = 0; j < Maxcol; j++)
+                {
+                    Console.Write(" " + Matrix[i, j]);
+                    if(i==j)
+                    {
+                        sum += Matrix[i, j];
+
+                    }
+                }
+                Console.WriteLine();
+            }
+            Console.WriteLine("The sum of diagonal is "+ sum); 
+        }
+    }
+}
+
+
+
+
+#18
+﻿using System;
+using System.IO;
+namespace Exercises
+{
+    class FileRead
+    {
+       public static void Main()
+        {
+            string fileName;
+            while (true)
+            {
+                Console.WriteLine("\n --------------- MENU --------------- \n");
+                Console.WriteLine("\n 1.Create a File ");
+                Console.WriteLine("\n 2.Existence of the File ");
+                Console.WriteLine("\n 3.Read the contents of the File ");
+                Console.WriteLine("\n 4.Exit ");
+                Console.Write("\n Enter your choice : ");
+                int ch = int.Parse(Console.ReadLine());
+                switch (ch)
+                {
+                    case 1:
+                        Console.Write("\n Enter the file name to create: ");
+                        fileName = Console.ReadLine();
+                        Console.WriteLine("\n Write the Contents to the File: \n");
+                        string r = Console.ReadLine();
+                        using (StreamWriter fileStr = File.CreateText(fileName))
+                        {
+                            fileStr.WriteLine(r);
+                        }
+                        Console.WriteLine("File is Created…");
+                        break;
+                    case 2:
+                        Console.Write("\n Enter the file name:");
+                        fileName = Console.ReadLine();
+                        if (File.Exists(fileName))
+                        {
+                            Console.WriteLine("File exists...");
+                        }
+                        else
+                        {
+                            Console.WriteLine("File does not exist in the current directory!");
+
+                        }
+                        break;
+                    case 3:
+                        Console.Write("Enter the file name to read the contents:\n");
+                        fileName = Console.ReadLine();
+                        if (File.Exists(fileName))
+                        {
+                            using (StreamReader sr = File.OpenText(fileName))
+                            {
+                                string s = "";
+                                Console.WriteLine(" Here is the content of the file : ");
+                                while ((s = sr.ReadLine()) != null)
+                                {
+                                    Console.WriteLine(s);
+                                }
+                                Console.WriteLine("");
+                            }
+                        }
+                        else
+                        {
+                            Console.WriteLine("File does not exists");
+                        }
+                        break;
+                    case 4:
+                        Console.WriteLine("\n Exiting...");
+                        return;
+                    default:
+                        Console.WriteLine("\n Invalid choice");
+                        break;
+                }
+            }
+        }
+    }
+}
+
+
+
+#19
+﻿using System;
+using System.IO;
+namespace Exercises
+{
+    class FileRead
+    {
+       public static void Main()
+        {
+            string file1;
+            string file2;
+            Console.WriteLine("Enter the first file path:");
+            file1 = Console.ReadLine();
+            Console.WriteLine("Enter the second file path:");
+            file2 = Console.ReadLine();
+            if(!File.Exists(file1))
+            {
+                Console.WriteLine("First file does not exist!");
+            }
+           else if (!File.Exists(file2))
+            {
+                Console.WriteLine("Second file does not exist!");
+            }
+            else if(File.ReadAllText(file1)==File.ReadAllText(file2))
+            {
+                Console.WriteLine("Both files contain the same content");
+            }
+            else
+            {
+                Console.WriteLine("Contents of files are not the same");
+            }
+        }
+    }
+}
+
+
+
+#19
+﻿using System;
+namespace Exercises
+{
+    class Fraction : IComparable
+    {
+        int z, n;
+        public Fraction(int z, int n)
+        {
+            this.z = z;
+            this.n = n;
+        }
+        public static Fraction operator +(Fraction a, Fraction b)
+        {
+            return new Fraction(a.z * b.n + a.n * b.z, a.n * b.n);
+        }
+        public static Fraction operator *(Fraction a, Fraction b)
+        {
+            return new Fraction(a.z * b.z, a.n * b.n);
+        }
+        public int CompareTo(object obj)
+        {
+            Fraction f = (Fraction)obj;
+            if ((float)z / n < (float)f.z / f.n)
+                return -1;
+            else if ((float)z / n > (float)f.z / f.n)
+                return 1;
+            else
+                return 0;
+        }
+        public override string ToString()
+        {
+            return z + "/" + n;
+        }
+    }
+    class ICompInterface
+    {
+        public static void Main()
+        {
+
+        Fraction[] a = {
+ new Fraction(5,2),
+ new Fraction(29,6),
+ new Fraction(4,5),
+ new Fraction(10,8),
+ new Fraction(34,7)
+ };
+            Array.Sort(a);
+            Console.WriteLine("Implementing the IComparable Interface in " + "Displaying Fractions: ");
+        foreach (Fraction f in a)
+            {
+                Console.WriteLine(f + " ");
+            }
+            Console.WriteLine();
+            Console.ReadLine();
         }
     }
 }
